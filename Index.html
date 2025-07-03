@@ -1,11 +1,1439 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Minha Página de Teste</title>
+<!-- Hotjar Tracking Code for https://leanbliss-method.netlify.app -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6450056,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <style>.async-hide { opacity: 0 !important} </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7927GXD');</script>
+<!-- End Google Tag Manager -->
+
+<script>((c,l,u)=>{var r = ()=>Math.random()*100|0,m = /Mobi/i.test(window.navigator.userAgent),x = r(),cook = {s:(n, v, d = 60) => {document.cookie = `${n}=${v};expires=${(new Date(Date.now() + d * 864e5)).toUTCString()};path=/`;return v;},g:n => (v=document.cookie.split(`; ${n}=`)[1])?v.split(';')[0]:null},alg = {"split_equal":(v)=> r()%v.length,"mobile_desktop":(v)=> m?'mobile':'desktop'},e = (f)=>f.type=="mobile"&& m || f.type=="desktop"&&!m ||f.type=="all" || !f.type;for(var i in c)if(l.href.match(i) && e(c[i]) && x<=(c[i].traffic || 100) && (c[i].exclude?!l.href.match(c[i].exclude.join("|")):true)&& (c[i].only?l.href.match(c[i].only.join("|")):true)){var y = c[i].variations[cook.g(u) || cook.s(u, alg[c[i].alg || "split_equal"](c[i].variations))];l.href = y + (y.indexOf('?')<0? '?':'&')+l.search.substring(1);}})({"\/video.php":{"type":"all","variations":["video_yt.php?vtid=yout","video_vturb.php?vtid=vturb"],"only":["boldapex1"]}},window.location,"__split");</script>  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noimageindex, nofollow, nosnippet">
+  <meta name="description" content="LeanBliss - Text Presentation">
+  <title>LeanBliss - Text Presentation</title>
+  <link rel="icon" type="image/png" href="https://leanbliss24.com//statics/img/favicon.png">
+  
+  <style>
+    @font-face {
+  font-family: main-font;
+  src: url("https://leanbliss24.com//statics/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: bold-font;
+  src: url("https://leanbliss24.com//statics/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: bold-m-font;
+  src: url("https://leanbliss24.com//statics/fonts/ELMessiri-Bold.ttf");
+}
+
+@font-face {
+  font-family: roboto-bold-font;
+  src: url("https://leanbliss24.com//statics/fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: light-font;
+  src: url("https://leanbliss24.com//statics/fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: medium-font;
+  src: url("https://leanbliss24.com//statics/fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: semi-bold-font;
+  src: url("https://leanbliss24.com//statics/fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: caslon-font;
+  src: url("https://leanbliss24.com//statics/fonts/BigCaslon.ttf");
+}
+
+
+*{
+    --background-color:white;
+    --main-font-color:#272727;
+    --main-hover-color: grey;
+    --main-font-family: main-font, Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    /* font sizes */
+    --font-large: 2rem;
+    --font-medium: 1.5rem;
+    --font-normal: 1rem;
+    --font-small: 0.5rem;
+    
+    /* HDEADLINE */
+    --headline-color: var(--main-font-color);
+    
+    /* FOOTER colors*/
+    --footer-background-color: black;
+    --copywrite-background-color:#272727;
+    --footer-font-color:#272727;
+    --footer-hover-color:var(--main-hover-color);
+    
+    --accent-color-light:#00a536;
+    /* PRICE BOX */
+    --color-dark:#3d56b0;
+    --color-light:#2fb3c5;
+    
+} 
+</style>  <link rel="stylesheet" type="text/css" href="https://leanbliss24.com//statics/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://leanbliss24.com//statics/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://leanbliss24.com//statics/css/webfont.css">
+  
+  
+  <script src="https://leanbliss24.com//statics/js/statics_js.php?static=https://leanbliss24.com/"></script>
+  <script src="https://static.leanbliss24.com//statics/statics.js" baseurl="https://leanbliss24.com//"></script>
+  
+    <!-- Begin of Digistore24 Trusted Badge Code -->
+<script>
+window.addEventListener("load", function(){
+	var script = document.createElement('script');
+	script.src = "https://www.digistore24.com/trusted-badge/29005/mlGylmjr6ed3GLd/salespage";
+	document.getElementsByTagName('head')[0].appendChild(script);
+});
+</script>
+<!-- End of Digistore24 Trusted Badge Code -->  
+
 </head>
+
 <body>
-  <h1>✅ Funcionando!</h1>
-  <p>Parabéns! Sua página está no ar via GitHub Pages.</p>
-</body>
+      
+      <div class="container-fluid">
+         <div class="row dark-purple-bg py-2 py-lg-4">
+            <div class="container py-2 py-md-0">
+
+
+            <section class="top-nav ">
+    <div>
+    <img src="https://leanbliss24.com//statics/img/white_logo.png" class=" img-fluid d-block  img-fluid d-block " style="max-width:168px;">
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+  <ul class="menu">
+      
+      <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a onclick="hideMenu()" onclick="hideMenu" href="#about">About LeanBliss</a></li>
+      <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a onclick="hideMenu()" onclick="hideMenu" href="#ingredients">Ingredients</a></li>
+      <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a onclick="hideMenu()" href="#faq">FAQ</a></li>
+      <li class="justify-content-sm-start hov align-self-md-center pl-4 pl-lg-0"><a onclick="hideMenu()" href="#order-now"><img src="https://leanbliss24.com//statics/img/order-now.png" class="order-now-button img-fluid d-block"></a></li>
+    </ul>
+  </section>
+<script>
+   function hideMenu() 
+      {
+         document.getElementById("menu-toggle").checked = false;
+      }
+</script>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="light-purple-bg">
+        <div class="container-fluid">
+
+            <div class="container">
+<div class="light-purple-bg">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="py-4"></div>
+      <div class="row" id="about"  
+<div class="col-12 col-lg-4 pr-lg-5 pt-4">
+  <img 
+    src="https://leanbliss24.com//statics/img/tsl-main.png" 
+    class="img-fluid d-block mx-auto" 
+    style="max-height:420px;">
+</div>
+<div class="col-12 col-lg-8 px-lg-0 py-md-4 pt-2 mt-1">
+          <h2 class="text-white" style="font-size:38px;">
+            <b>The Natural Method That Supports Healthy<br class="d-none d-md-block">Weight Loss & Steady Blood Sugar Levels</b>
+          </h2>
+<!-- Vídeo Review Positivo LeanBliss Responsivo -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 20px auto;">
+  <iframe
+    src="https://www.youtube.com/embed/ClfZfBkUVtA"
+    title="LEANBLISS Review by MD Specialist"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; border: none;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+          <p class="text-white medium pt-2 bigger">
+            Unstable blood sugar levels may contribute to weight gain and influence cravings and fatigue. LeanBliss is designed to help manage blood sugar levels, potentially reduce cravings, and assist in weight management.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-4">
+        <h3 class="text-white" style="font-size:24px;"><b>Main Benefits:</b></h3>
+        <ul class="text-white">
+          <li>✅ Supports healthy weight loss</li>
+          <li>✅ Helps control blood sugar levels</li>
+          <li>✅ Reduces cravings and hunger</li>
+          <li>✅ Increases natural energy</li>
+          <li>✅ Made with 100% natural ingredients</li>
+        </ul>
+
+        <h3 class="text-white" style="font-size:24px;"><b>Main Ingredients:</b></h3>
+        <ul class="text-white">
+          <li>🍬 Gymnema Sylvestre – Helps reduce sugar absorption</li>
+          <li>🌿 Banaba Leaf – Supports glucose metabolism</li>
+          <li>🍒 Bitter Melon – Aids in reducing blood sugar spikes</li>
+          <li>🍋 Cinnamon Bark – Helps improve insulin sensitivity</li>
+          <li>🌱 Chromium – Supports nutrient absorption and balance</li>
+        </ul>
+
+        <h3 class="text-white" style="font-size:24px;"><b>Who can use LeanBliss?</b></h3>
+        <ul class="text-white">
+          <li>✅ People who are overweight</li>
+          <li>✅ Pre-diabetics</li>
+          <li>✅ Type 2 diabetics</li>
+          <li>✅ Men and women over 18 years old</li>
+          <li>❌ Not recommended for pregnant women, nursing mothers, or minors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+                
+                
+
+
+              <div class="pt-1"></div>
+                        <img src="https://leanbliss24.com//statics/img/certifications_new.png"
+                            class="img-fluid d-block" style="width:650px;">
+                    </div>
+                </div>
+            </div>
+            <div class="py-4"></div>
+        </div>
+</div>
+
+<style>
+.glow-button {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 18px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 14px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 20px #ff4b2b;
+  animation: glow 1.5s infinite ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.glow-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ff4b2b, 0 0 10px #ff4b2b;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff4b2b, 0 0 30px #ff4b2b;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff4b2b, 0 0 10px #ff4b2b;
+  }
+}
+</style>
+
+<div class="text-center my-4">
+  <a href="#six-bottles" class="glow-button">
+  🔥🔥Click here! Special discount for the first 10 who buy – Don’t miss out! 🔥🔥
+  </a>
+</div>
+
+        <div class="py-4"></div>
+        <div class="py-2"></div>
+
+        <div class="py-3"></div>
+        <div class="py-3"></div>
+    </div>
+    <div class="mint-bg">
+         <div class="container-fluid">
+            <div class="py-4"></div>
+            <div class="py-2"></div>
+            <div class="container-sm white-bg-rounded px-2">
+            <div class="ml-lg-2 pl-lg-5">
+               <div class="py-4"></div>
+               <img src="https://leanbliss24.com//statics/img/black_logo.png" class="img-fluid d-block mx-auto mx-lg-0" style="width:375px;max-width:85%;">
+               <div class="py-4"></div>
+   </div>
+                  <div class="ml-lg-2 pl-lg-4">
+               <div class="d-flex justify-content-end flex-column flex-lg-row pl-lg-4 pl-4">
+                  <div style="flex:4">
+                     <img src="https://leanbliss24.com//statics/img/checkmark2.png"     class="checkmark-bigger img-fluid d-inline-block">
+                     <p class="bigger d-inline medium-font">
+                    Natural Formula
+                     </p>
+                  </div>
+                  <div style="flex:4">
+                     <img src="https://leanbliss24.com//statics/img/checkmark2.png"     class="checkmark-bigger img-fluid d-inline-block">
+                     <p class="bigger d-inline medium-font">
+                     Non-GMO                       
+                     </p>
+                  </div>
+                  <div style="flex:4">
+                  <img src="https://leanbliss24.com//statics/img/2bottles-tsl.png" class=" img-fluid d-none d-lg-block  tsl-product-img2">
+                  </div>
+               </div>
+               <div class="d-flex justify-content-end flex-column flex-lg-row pl-lg-4 pl-4">
+                  <div style="flex:4">
+                     <img src="https://leanbliss24.com//statics/img/checkmark2.png"     class="checkmark-bigger img-fluid d-inline-block">
+                     <p class="bigger d-inline medium-font">
+                     Easy To Use
+                     </p>
+                  </div>
+                  <div style="flex:4">
+                     <img src="https://leanbliss24.com//statics/img/checkmark2.png"     class="checkmark-bigger img-fluid d-inline-block">
+                     <p class="bigger d-inline medium-font">
+                     No Stimulants
+                     </p>
+                  </div>
+                  <div class="py-lg-0 py-3"></div>
+                  <div style="flex:4" class="">
+                  <img src="https://leanbliss24.com//statics/img/2bottles-tsl.png" class="img-fluid d-block  d-lg-none mx-auto tsl-product-img2-small">
+                  </div>
+                 
+               </div>
+               </div>
+               <div class="py-3"></div>
+               <div class="pt-1"></div>
+            </div>
+            <div class="py-4"></div>
+            <div class="py-2"></div>
+         </div>
+      </div>
+    <div class="bonus-bg" id="bonuses">
+        <div class="container-fluid">
+            <div class="py-4"></div>
+            <h1 class="small-title text-white text-center">Order <b style="color: white;">6 Bottles</b> or <b style="color: white;">3 Bottles</b><br /> and Get
+                <u><b style="color: white;">2 FREE Bonuses!</b></u>
+            </h1>
+            <div class="container mt-5">
+                <div class="ml-lg-3">
+                <div class="row ml-lg-4" >
+                    <div class="col-12 col-lg-6 ml-lg-n5 px-3 bonus-white-border">
+                        
+                        <div class="div py-3">
+                            <img src="https://leanbliss24.com//statics/img/bonus1.png"
+                                class=" img-fluid d-block mx-auto" style="margin-bottom:-1px;">
+                            <div class="dark-purple-bg">
+                                <p class="mb-0  text-center dark-height py-2 px-2 px-md-0 "><b style="color: white;"><span
+                                            class="accent-yellow">BONUS #1</span> - Superhuman Gut: Perfect <br class="d-none d-md-block">
+                                            Digestion While You Eat Whatever You Want
+                                        </b>
+                                </p>
+                            </div>
+                            <div class="bg-white bonus-height py-3 px-4 px-md-5 pb-md-5 py-md-3">
+                                <h3 class="text-center"><b>Retail Price - <s>$55</s></b><br> Today:
+                                    <b>FREE</b>
+                                </h3>
+                                <p class="smaller medium text-center pb-0 mt-4 mb-2">You’ll discover the relaxing ear massage that boosts digestion by 63%, the ancient spice that eliminates bloating in seconds, the Greek fruit that quickly relieves you from stubborn constipation, and so much more. </p>
+                                
+
+                            </div>
+                            </div>
+                        </div>
+                    
+                    <div class="col-12 col-lg-6  ml-lg-5 px-3  bonus-white-border mt-4 mt-lg-0">
+                        <div class="div py-3">
+                            <img src="https://leanbliss24.com//statics/img/bonus2.png"
+                                class=" img-fluid d-block mx-auto" style="margin-bottom:-1px;">
+                            <div class="dark-purple-bg">
+                                <p class="mb-0  text-center dark-height py-2 px-2 px-md-0 "><b style="color: white;"><span
+                                            class="accent-yellow">BONUS #2</span> - The At-Home Body Lift Protocol 
+                                            <br class="d-none d-md-block">
+                                            Used By Top Cosmetic Surgeons
+                                    </b>
+                                </p>
+                            </div>
+                            <div class="bg-white bonus-height py-3 px-4 px-md-5 py-md-3">
+                                <h3 class="text-center"><b>Retail Price - <s>$54</s></b><br> Today:
+                                    <b>FREE</b>
+                                </h3>
+                                <p class="smaller medium text-center pb-0 mt-4 mb-2">You’ll discover a special face yoga exercise that tightens skin in seconds, how adding certain pink flower petals to your bath gets rid of stretch marks and cellulite and a simple ancient Mediterranean olive oil ritual that gets you rid of wrinkles.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+                </div>
+            <div class="py-4"></div>
+            <div class="py-2"></div>
+        </div>
+    </div>
+    </div>
+    <div class="dark-purple-bg">
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-center">
+                <div class="row px-lg-5 py-4">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <img src="https://leanbliss24.com//statics/img/free-shipping.png"
+                                class=" img-fluid d-block mx-auto shipping-badge py-2">
+                        </div>
+                        <div class="align-self-center ml-lg-4 pl-lg-3 pt-3 pt-md-0">
+                            <h1 class="small-title  text-center"><b style="color: white;">Every Order Comes With <span
+                                        class="text-yellow"><u>FREE Shipping</u> Too!</span></b></h1>
+                            <h4 class="small-title text-white text-center medium">*96% Of Customers Order 6 Bottles (Our
+                                Recommended Option)</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="dark-purple-bg2">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="container">
+                    <h2 class=" tsl-dark-text  text-center mb-0 pb-0"><b style="color: white;">
+                            Claim Your Discounted LeanBliss<br /> Below While Stocks Last!
+                        </b>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="triangle-grey-ctr tg"></div>
+    <div class="py-5"></div>
+    <div class="py-3" id="order-now"></div>
+    <div class="container pricebox">
+   <div class="row">
+   <div class="col-lg-4 col-12 mb-3 col-lg-4 order-3 order-lg-0">
+   <div class="price-box left">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#92b3e1">1 X BOTTLE</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='1' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://leanbliss24.com//" productimage="1" type="fe"  ""
+                  class="pricebox-m-product-img1 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="1" type="fe"  ""
+                     class="pricebox-product-img1 d-none d-lg-block mx-auto img-fluid px-3">
+               </div>
+            
+               <div class="pt-lg-3"></div>
+               <img class="pricebox-price-img1 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/69.png">
+                  <div class="pt-lg-5"></div>
+                  <div class="pt-lg-3"></div>
+               <div class="py-1 py-lg-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy1_link""   class="mb-1 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now.png"  
+                  class="buy-button1 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='1' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='1' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info small-shipping text-center medium mb-0 mb-lg-5">+ Small Shipping Fee </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+    <!-- URGENCY TIMER SECTION -->
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); background-color: #ffdddd; }
+  50% { transform: scale(1.05); background-color: #ff9999; }
+  100% { transform: scale(1); background-color: #ffdddd; }
+}
+
+.pulse-box {
+  animation: pulse 1.5s infinite;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 36px;
+  font-weight: bold;
+  border: 2px solid red;
+  color: #222;
+}
+</style>
+
+<div style="max-width: 800px; margin: 40px auto; padding: 20px; text-align: center; background: #fff0f0; border: 2px solid red; border-radius: 16px;">
+  <h2 style="color: red; font-weight: bold; font-size: 24px;">
+    ⏰ Hurry! This exclusive offer won't last long.<br>
+    Take advantage of the best product on the market before time runs out!
+  </h2>
+
+  <div id="countdown" class="pulse-box">30:00</div>
+</div>
+
+<script>
+  let duration = 30 * 60;
+  const countdown = document.getElementById("countdown");
+
+  const timer = setInterval(() => {
+    const minutes = Math.floor(duration / 60);
+    const seconds = duration % 60;
+    countdown.textContent =
+      `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+    if (--duration < 0) {
+      clearInterval(timer);
+      countdown.textContent = "EXPIRED";
+      countdown.style.color = "gray";
+    }
+  }, 1000);
+                                    </script>                                                                                              
+<!-- Seção de Comentários -->
+<section style="max-width: 800px; margin: 40px auto; font-family: Arial, sans-serif;">
+  <h2 style="margin-bottom: 20px; color: #333;">What people are saying about LeanBliss:</h2>
+
+  <div style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+    <strong>Jessica R. – New York, USA</strong>
+    <p style="margin: 5px 0;">“I’ve been using LeanBliss for 3 weeks and I already feel lighter and more energetic. I wasn’t expecting such fast results!”</p>
+  </div>
+
+  <div style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+    <strong>Michael T. – Austin, TX</strong>
+    <p style="margin: 5px 0;">“I’ve tried so many weight loss supplements, but this is the first one that didn’t make me feel jittery. LeanBliss feels natural and effective.”</p>
+  </div>
+
+  <div style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+    <strong>Samantha L. – Miami, FL</strong>
+    <p style="margin: 5px 0;">“I noticed a big change in my bloating and digestion after just a few days. Definitely recommend!”</p>
+  </div>
+
+  <div style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+    <strong>Daniela G. – Los Angeles, CA</strong>
+    <p style="margin: 5px 0;">“I combined LeanBliss with a healthy diet and lost 6 pounds in a month. Very happy with the results so far.”</p>
+  </div>
+
+  <div style="border-bottom: 1px solid #ccc; padding: 15px 0;">
+    <strong>Lisa P. – Chicago, IL</strong>
+    <p style="margin: 5px 0;">“I was skeptical at first, but LeanBliss really surprised me. I feel less hungry and more motivated to stay active.”</p>
+  </div>
+                             </section>
+      <div class="col-lg-4 col-12 mb-3 col-lg-4 order-lg-2 highlighted">
+   <div class="price-box middle">
+      <div class="row pt-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-3 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">6 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='3' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://leanbliss24.com//" productimage="3" type="fe"  ""
+                  class="pricebox-m-product-img6 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3"id="six-bottles">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="3" type="fe"  ""
+                     class="pricebox-product-img6 d-none d-lg-block mx-auto img-fluid  mt-2 mt-lg-2 px-3">
+               </div>
+               <div class="py-lg-3"></div>   
+               <div class="pt-lg-1"></div>
+               <img class="pricebox-price-img6 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/49.png">
+               <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://leanbliss24.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy6_link""   class="mb-3 mx-auto add_view d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now2.png"  
+                  class="buy-button6 img-fluid d-block pl-lg-2 mx-auto " alt=""></a>
+               <div class="center card-section py-0 py-lg-2">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='3' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='3' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+     <div class="col-lg-4 col-12 mb-3 col-lg-4 order-2 order-lg-3">
+   <div class="price-box right">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+            <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">3 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='2' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-0"></div>
+               <img src="https://leanbliss24.com//" productimage="2" type="fe"  ""
+                  class="pricebox-m-product-img3 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="2" type="fe"  ""
+                     class="pricebox-product-img3 d-none d-lg-block mx-auto  img-fluid pl-2 px-2">
+               </div>
+            
+               <div class="py-lg-3"></div>   
+               <img class="pricebox-price-img3 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/59.png">
+                  <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://leanbliss24.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy3_link""   class="mb-2 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now.png"  
+                  class="buy-button3 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='2' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='2' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+</div>    <div class="pt-1"></div>
+    <div class="bg-white">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="container">
+                    <p class="bigger medium text-center  mb-0">
+                        <b>Our customers say</b>
+                    </p>
+                    <img src="https://leanbliss24.com//statics/img/stars2.png" class="img-fluid d-block mx-auto py-2"
+                        style="max-width:245px;">
+                    <p class="bigger medium text-center">
+                        based on <b>11,369 reviews!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue-circles">
+        <div class="container-fluid">
+            <div class="py-4 py-lg-5"></div>
+            <div class="py-1"></div>
+            <div class="container-md white-bg-rounded">
+                <div class="py-3"></div>
+                <div class="row d-flex flex-column flex-lg-row px-lg-5 px-4">
+                    <div style="flex:3;" class="align-self-center align-self-md-end">
+                        <img src="https://leanbliss24.com//statics/img/180-mbb.png"
+                            class="new-ref guarantee-img img-fluid d-block mx-auto pb-4 pb-lg-0">
+                    </div>
+                    <div class="" style="flex:9;">
+                        <div class="py-3"></div>
+                        <h2 class="tsl bold"><b>100% Satisfaction <br class="d-none d-lg-block">
+                        <span class="new-text">180</span>-Day Money Back Guarantee</b>
+                        </h2>
+                        <p class="bigger medium mb-0 pt-3 pr-md-3">Your order today is covered by our iron-clad <b><span class="new-text">180</span>-day 100% <br class="d-none d-lg-block">
+                         money-back guarantee</b>. If you are not impressed with the <br class="d-none d-lg-block">
+                          results, then just write to us and we’ll refund every single cent.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-4"></div>
+                <div class="py-lg-2"></div>
+            </div>
+            <div class="py-4 py-lg-5"></div>
+            <div class="py-lg-1"></div>
+        </div>
+    </div>
+
+    <div class="badges-bg">
+        <div class="container-fluid">
+            <div class="row py-2">
+                <div class="container">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <img src="https://leanbliss24.com//statics/img/certifications_new.png"
+                            class="img-fluid d-block mx-auto py-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" id="faq">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="container-md">
+                    <div class="col-12 col-lg-12 mx-auto px-0">
+                        <div class="py-1"></div>
+                        <h2 class="text-center bold tsl">
+                            Frequently Asked Questions
+                        </h2>
+                        <div class="py-4"></div>
+
+                        <style>
+button:focus {
+    outline: none;
+}
+
+.arrow {
+    background-image: url(./statics/img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    cursor: pointer;
+}
+
+
+
+
+.accordion {
+    background-color: #EFEFEF;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 11px;
+    outline: none;
+    transition: 0.4s;
+    font-size: 30px;
+    font-family: bold-font;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+
+.accordion:hover {
+    background-color: lightgrey;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    font-family: medium-font;
+}
+
+@media (max-width: 993px) {
+    .arrow {
+        background-image: url(./statics/img/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+        cursor: pointer;
+    }
+
+    .accordion {
+    background-color: #EFEFEF;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 11px;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    font-family: bold-font;
+    padding-left: 2px;
+    padding-right: 0px;
+
+}
+}
+
+ 
+
+</style>
+
+
+
+
+
+    <div class="accordion-div">
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class=" col-9 col-md-11 toggle-headline py-md-4 py-2  px-md-4 ml-md-0 ml-2">
+                               
+                        <h3 class="my-0 mx-1 acc "><b> How does LeanBliss work? </b></h3>
+
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc  ml-md-4">
+            LeanBliss was created by a doctor who realized that it's not weight gain that causes the blood sugar to fluctuate. It's actually the blood sugar that starts going up and down way before any weight is gained.
+
+            </p>
+            <p class="acc  ml-md-4">
+            Your body tries to maintain a steady level of blood sugar - it's a bit like a fuel gauge, indicating when you need to refuel. And when the levels are low, your body sends signals to refill it, which usually means eating food. This could be why you sometimes feel sluggish or wake up tired, even after a full night's sleep.
+
+</p>
+<p class="acc  ml-md-4">
+LeanBliss is designed to first support healthy blood sugar levels. Then, it reprograms the brain to stop generating cravings and instructs the body to stop storing excess fat. Finally, it focuses on shedding the stored fat cells and resetting the function of the pancreas.
+
+</p>
+<p class="acc  ml-md-4">
+And the best part? It’s packaged in a delicious chocolatey form, making the process not just effective, but also enjoyable!
+
+</p>
+            
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b> Are there any side effects? </b></h3>
+
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span>
+        </button>
+        <div class="panel">
+            <p class="acc  ml-md-4">
+            LeanBliss has been designed for all ages and medical conditions. All of the ingredients have been proven to be safe in clinical trials and are constantly tested for purity and to ensure against toxins and contaminants.
+
+
+            </p>
+
+            <p class="acc  ml-md-4">With more than 100,000 customers, we haven’t seen any notable side effects. So we’re confident in saying that LeanBliss is one of the purest weight management formulas you’ll find on the market.
+</p>
+
+            <p class="acc  ml-md-4">As always, if you currently have a medical condition or you’re taking other prescription medication, we advise you to show a bottle of LeanBliss to your doctor before you use it, just to put your mind at ease.
+
+            </p>
+
+           
+
+</div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b>  What is your money back guarantee? </b></h3>
+
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc  ml-md-4 pb-2"> It is a risk-free option that we are offering you because we believe in this formula so much. It means you can try LeanBliss for a full <span class="new-text">180</span> days. And if you are not completely convinced by the amazing results, then just get your money back.
+            </p>
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b>How many bottles should I order?</b></h3>
+
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc  ml-md-4">Most of our clients order six bottles at a time and many double their order because they want to enjoy the benefits of this healthy weight and blood sugar supporting formula for as long as possible or even share it with their friends and family.
+
+
+            </p>
+
+            <p class="acc  ml-md-4 pb-2">It is a smart choice because those who buy the 6 bottle pack get a massive discount, free shipping and 2 free online guides. That's a lot of value and savings, especially since, once they start seeing results, our clients usually want to reorder.
+
+
+            </p>
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b> How do I use LeanBliss? </b></h3>
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc m ml-md-4">We made the solution taste like a chocolate candy, so you can chew it as a snack or add it to the end of your breakfast as a treat every day.
+
+            </p>
+            
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b>  Is this a one-off purchase?</b></h3>
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc m ml-md-4">Yes, your order is a one-off purchase with no hidden autoship, clauses or charges. The price you see on the checkout page is the only price you will have to pay.
+
+            </p>
+            
+        </div>
+
+        <button class="accordion"><span class="faq__question-heading">
+                <div class="row">
+
+                    <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                        <h3 class="my-0 mx-1 acc"><b> What are the ingredients inside LeanBliss? </b></h3>
+
+                    </div>
+                    <div class="col text-right arrow">
+                    </div>
+                </div>
+            </span></button>
+        <div class="panel">
+            <p class="acc m ml-md-4">Inside every single candy of LeanBliss is a proprietary formula of 9 strong weight-management and blood sugar supporting ingredients, custom-made to make you proud of your body.
+
+            </p>
+            <div class="col-12 py-5">
+                        <img class="img-fluid mx-auto d-block" src="./statics/img/main-prod-label.png">
+                    </div>
+        </div>
+
+       <button class="accordion"><span class="faq__question-heading">
+            <div class="row">
+
+                <div class="col-9 col-md-11 toggle-headline py-md-4 py-2 px-3 px-md-4 ml-md-0 ml-2">
+
+                    <h3 class="my-0 mx-1 acc"><b>*Shipping policy</b></h3>
+
+                </div>
+                <div class="col text-right arrow">
+                </div>
+            </div>
+        </span></button>
+    <div class="panel">
+        <div class="container  tabel pl-md-5 ml-md-5">
+                <div class="row pr-md-5 pl-md-3">
+                    <div class="col-12 pl-2 ">
+                        <table class=" py-3 py-md-3 table">
+                            <tr class="" style="border-top: 2px solid white;">
+                                <th scope="col"><b>Delivery Address</b></th>
+                                <th scope="col"><b>Shipping Fee </b></th> 
+                                <th scope="col"><b>Shipping Time</b></th>
+                            </tr>
+                            <tr>                                                                          
+                                <td>United States</td>
+                                <td class="free-mark">FREE </td>
+                                <td>5-7 working days</td>
+                            </tr>                                                                                         
+                            <tr>                                                                                
+                                <td>Canada </td>
+                                <td>$15.95</td>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>                                                                                
+                                <td>UK and Ireland</td>
+                                <td>$15.95</td>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>                                                                                
+                                <td>Australia and New Zealand</td>
+                                <td>$15.95</td>
+                                <td>10-15 working days</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+</div>
+</div>
+
+    </div>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        for (let j = 0; j < acc.length; j++) {
+            acc[j].classList.remove("active");
+            if (j != i) {
+                acc[j].nextElementSibling.style.maxHeight = null;
+         }
+        }
+        this.classList.add("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+</script>
+
+
+            </div>    
+            </div>
+        </div>
+    </div>
+    <div class="py-md-4 py-1"></div>
+    <div class="py-4"></div>
+   
+    
+    <div class="dark-purple-bg">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="container">
+                    <h2 class="tsl-dark-text  text-center mb-0 pb-0"><b style="color: white;">
+                            Claim Your Discounted LeanBliss<br /> Below While Stocks Last!
+                        </b>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="triangle2-grey-ctr tg"></div>
+    <div class="py-5"></div>
+    <div class="container pricebox">
+   <div class="row">
+   <div class="col-lg-4 col-12 mb-3 col-lg-4 order-3 order-lg-0">
+   <div class="price-box left">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#92b3e1">1 X BOTTLE</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='1' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://leanbliss24.com//" productimage="1" type="fe"  ""
+                  class="pricebox-m-product-img1 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="1" type="fe"  ""
+                     class="pricebox-product-img1 d-none d-lg-block mx-auto img-fluid px-3">
+               </div>
+            
+               <div class="pt-lg-3"></div>
+               <img class="pricebox-price-img1 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/69.png">
+                  <div class="pt-lg-5"></div>
+                  <div class="pt-lg-3"></div>
+               <div class="py-1 py-lg-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy1_link""   class="mb-1 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now.png"  
+                  class="buy-button1 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='1' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='1' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info small-shipping text-center medium mb-0 mb-lg-5">+ Small Shipping Fee </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+      <div class="col-lg-4 col-12 mb-3 col-lg-4 order-lg-2 highlighted">
+   <div class="price-box middle">
+      <div class="row pt-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+               <div class="pt-3 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">6 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='3' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-2"></div>
+               <img src="https://leanbliss24.com//" productimage="3" type="fe"  ""
+                  class="pricebox-m-product-img6 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="3" type="fe"  ""
+                     class="pricebox-product-img6 d-none d-lg-block mx-auto img-fluid  mt-2 mt-lg-2 px-3">
+               </div>
+               <div class="py-lg-3"></div>   
+               <div class="pt-lg-1"></div>
+               <img class="pricebox-price-img6 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/49.png">
+               <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://leanbliss24.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy6_link""   class="mb-3 mx-auto add_view d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now2.png"  
+                  class="buy-button6 img-fluid d-block pl-lg-2 mx-auto " alt=""></a>
+               <div class="center card-section py-0 py-lg-2">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='3' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='3' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+     <div class="col-lg-4 col-12 mb-3 col-lg-4 order-2 order-lg-3">
+   <div class="price-box right">
+      <div class="row py-3 py-lg-0 px-2 px-lg-0">
+         <div class="col-6 col-lg-12 mt-3 mt-lg-0">
+            <div class="price_header">
+            <div class="pt-0 pt-lg-2"></div>
+               <h3 class="pricebox-bottle-nr text-center pt-lg-4 mb-0" ><b style="color:#27579a">3 X BOTTLES</b>
+               </h3>
+               <p class="pricebox-day-supply-nr text-center text-dark mb-0 semi-b">·
+                  <span replace item='2' type='fe'  parameter='days'></span> Day Supply ·
+               </p>
+               <div class="py-2 py-lg-0"></div>
+               <img src="https://leanbliss24.com//" productimage="2" type="fe"  ""
+                  class="pricebox-m-product-img3 d-block d-lg-none mx-auto img-fluid">
+            </div>
+         </div>
+         <div class="col-6 col-lg-12 pl-0 pl-lg-3">
+            <div class="card-product">
+               <div class="price_product_box">
+                  <img src="https://leanbliss24.com//" productimage="2" type="fe"  ""
+                     class="pricebox-product-img3 d-none d-lg-block mx-auto  img-fluid pl-2 px-2">
+               </div>
+            
+               <div class="py-lg-3"></div>   
+               <img class="pricebox-price-img3 img-fluid mx-auto d-block pt-0 pt-lg-5"
+                  src="https://leanbliss24.com//statics/img/59.png">
+                  <img class="pricebox-free-bonus-img img-fluid mx-auto d-block pt-1 pt-lg-3"
+                  src="https://leanbliss24.com//statics/img/2freebonuses.png">
+               <div class="py-2"></div>
+               <a href="https://leanbliss24.com/text.php#aff=taynassteffany" buylink="buy3_link""   class="mb-2 mb-lg-3 add_view mx-auto d-block " ><img
+                  src="https://leanbliss24.com//statics/img/buy-now.png"  
+                  class="buy-button3 img-fluid pt-lg-0 d-block mx-auto " alt=""></a>
+               <div class="card-section py-0 py-lg-1">
+                  <p class="pricebox-total-price text-center mt-0 mb-0 mb-lg-1">TOTAL: <s>$<span replace item='2' type='fe' parameter='initial_price'></span></s><b>
+                     $<span replace item='2' type='fe'  parameter='price'></span></b>
+                  </p>
+                  <img src="https://leanbliss24.com//statics/img/credit-cards.png"
+                     class="credit-cards img-fluid mx-auto d-block mb-0 py-lg-0"  alt="">
+                  <p class="pricebox-shipping-info text-center medium mb-0 mb-lg-5">*FREE Shipping </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+</div>    <div class="pt-1"></div>
+    <div class="bg-white">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="container">
+                    <p class="bigger text-center  mb-0">
+                        <b>Our customers say</b>
+                    </p>
+                    <img src="https://leanbliss24.com//statics/img/stars2.png" class="img-fluid d-block mx-auto py-2"
+                        style="max-width:245px;">
+                    <p class="bigger text-center">
+                        based on <b>11,369 reviews!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ref-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="py-4"></div>
+                    <div class="py-2"></div>
+                    <h3 class="text-center medium">Scientific References:</h3>
+                    <img src="https://leanbliss24.com//statics/img/refs-logos.png" class="img-fluid d-block mx-auto py-5"
+                        style="width:1200px;max-width:100%;">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 px-4">
+                    <ol class="tsl-ref pl-0" id="refrences" style="color:#272727">
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7573929/">Bian Y, Zhao C, Lee SM. Neuroprotective potency of saffron against neuropsychiatric diseases, neurodegenerative diseases, and other brain disorders: From bench to bedside. Frontiers in Pharmacology. 2020 Oct 6;11:579052. doi:10.3389/fphar.2020.579052.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8575641/">Haidari F, Shayesteh F, Mohammad-Shahi M, Jalali MT, Ahmadi-Angali K. Olive leaf extract supplementation combined with calorie-restricted diet on reducing body weight and fat mass in obese women: result of a randomized control trial. Clinical Nutrition Research. 2021 Oct;10(4):314. doi:10.7762/cnr.2021.10.4.314.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://medicine.yale.edu/ycci/trial/glp-1a-food-cues-stress-highly-palatable-foods-and-weight/.">Jestreboff A. GLP-1 analogue effects on food cues, stress, motivation for highly palatable foods, and weight [Internet]. 2023 [cited 2023 Aug 18]. 
+    </a></li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://pubmed.ncbi.nlm.nih.gov/27887947/">Jin Y, Liu S, Ma Q, Xiao D, Chen L. Berberine enhances the AMPK activation and autophagy and mitigates high glucose-induced apoptosis of mouse podocytes. European journal of pharmacology. 2017 Jan 5;794:106-114. doi:10.1016/j.ejphar.2016.11.037.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.hindawi.com/journals/ecam/2012/272710/">Kamiya T, Sameshima-Kamiya M, Nagamine R, Tsubata M, Ikeguchi M, Takagaki K, Shimada T, Aburada M. The crude extract from puerariae flower exerts antiobesity and antifatty liver effects in high-fat diet-induced obese mice. Evidence-Based 
+</a></li>
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7166675/">Stohs SJ, Miller H, Kaats GR. A review of the efficacy and safety of banaba (Lagerstroemia speciosa L.) and corosolic acid. Phytotherapy Research. 2012 Mar;26(3):317-324. doi:10.1002/ptr.3664. 
+</a></li>
+</ol>
+                    </div>
+                    <div class="col-12 col-lg-6 px-4">
+                    <ol class="tsl-ref pl-0" start="7">
+
+                    <li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://pubmed.ncbi.nlm.nih.gov/25748372/">Maeda H. Nutraceutical effects of fucoxanthin for obesity and diabetes therapy: a review. Journal of Oleo Science. 2015;64(2):125-132. doi: 10.5650/jos.ess14226.
+</a></li>
+
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6080514/">Sharmin T, Rahman MS, Mohammadi H. Investigation of biological activities of the flowers of Lagerstroemia speciosa, the Jarul flower of Bangladesh. BMC Complementary and Alternative Medicine. 2018 Dec;18(1):1-0. doi:10.1186/s12906-018-2286-6.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://www.hindawi.com/journals/ecam/2014/971890/">Shen Y, Song SJ, Keum N, Park T. Olive leaf extract attenuates obesity in high-fat diet-fed mice by modulating the expression of molecules involved in adipogenesis and thermogenesis. Evidence-Based Complementary and Alternative Medicine. 2014 Jan 1;2014. doi:10.1155/2014/971890.</a>
+</li>
+
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://pubmed.ncbi.nlm.nih.gov/18348886/">Shi L, Zhang W, Zhou YY, Zhang YN, Li JY, Hu LH, Li J. Corosolic acid stimulates glucose uptake via enhancing insulin receptor phosphorylation. European journal of pharmacology. 2008 Apr 14;584(1):21-29. doi:10.1016/j.ejphar.2008.01.020.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+        href="https://pubmed.ncbi.nlm.nih.gov/22878195/">Kamiya T, Takano A, Matsuzuka Y, Kusaba N, Ikeguchi M, Takagaki K, Kondo K. Consumption of Pueraria flower extract reduces body mass index via a decrease in the visceral fat area in obese humans. Bioscience, biotechnology, and biochemistry. 2012 Aug 23;76(8):1511-1517. doi:10.1271/bbb.120235.</a>
+</li>
+
+<li style="padding-bottom:15px;"><a class="reference-link"
+    href="https://pubmed.ncbi.nlm.nih.gov/22107709/">Spencer JP, Vafeiadou K, Williams RJ, Vauzour D. Neuroinflammation: modulation by flavonoids and mechanisms of action. Molecular aspects of medicine. 2012 Feb 1;33(1):83-97. doi:10.1016/j.mam.2011.10.016.</a></li>
+
+
+
+
+
+</ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4"></div>
+
+    </div>
+    <!-- remove after review-->
+    <!--<section>
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-5">
+                            <h3 style="font-size:18px;"><a href="https://www.digistore24.com/info/contact/2?lang=en" target="_blank">For
+                                    Order Support, please contact DigiStore24 HERE.</a></h3>
+                            <div class="py-1"></div>
+                            <h3 style="font-size:18px;" class="text-dark">For product support contact the vendor using
+                                the contact form below.</h3>
+                            <div class="py-5"></div>
+                            <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<style type="text/css" media="screen, projection">
+	@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 
+</style> 
+<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://glenview.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&screenshot=No&attachFile=no&searchArea=no&helpdesk_ticket[product]=13000006962&disable[product_id]=true&submitTitle=Send+Message" scrolling="no" height="630px" width="100%" frameborder="0" >
+</iframe>                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+
+
+    
+    <script src="https://www.digistore24.com/service/digistore.js"></script>
+<script type="text/javascript">
+digistorePromocode( { "product_id": 525599, "adjust_all_urls": true, "adjust_domain": true } );
+</script>
+<script type="text/javascript">
+window.addEventListener("staticsDone", function(){
+	digistoreAppendAffiliateToBuyUrls(525599);
+});
+
+</script>
+    <footer>
+        
+<div class="footer-wrapper position-relative overflow-hidden">
+<div class="footer-top-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-12" style="padding-left: 0px;padding-right:0px;">
+            <div class="footer-menu">
+               <ul class="pt-2 px-md-0 px-3">
+                 <!--  <li class="footer-menu-links"><a href="https://leanbliss24.com//index.php" target="_blank">Home</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//text.php?#start-now">Get Started</a></li>-->
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/contact-us.php" target="_blank">Contact</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/references.php" target="_blank">References</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/terms.php" target="_blank">Terms Of Use</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/disclaimer.php" target="_blank">Disclaimer</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/privacy.php" target="_blank">Privacy Policy</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/shipping.php" target="_blank">Shipping Policy</a></li>
+                  <li class="footer-menu-links"><a href="https://leanbliss24.com//help/refunds.php" target="_blank">Refund Policy</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer-middle-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <p class=" py-2"></p>
+            <div class="disclaimer">
+            <p class="text-center mb-1">For Product Support, please contact the vendor <a class="text-dark" href="https://leanbliss24.com//help/contact-us.php" target="_blank"><u>here</u></a></p>
+	<p class="text-center">For Order Support, please contact DigiStore24 <a class="text-dark" target="_blank" href="https://www.digistore24.com/info/contact/2?lang=en"><u>here</u></a></p>
+               <div class="footer-main-section">
+    <p class="text-center">Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.</p>
+    <p class="text-center pt-3">*For international shipping (outside of the United States), shipping fees will apply. <a class="footer-link" href="../help/shipping.php" target="_blank">Read more here</a>.</p>
+</div>            </div>
+            <p><span id="disclaimer"></span></p>
+            <p class=" py-2"></p>
+         </div>
+
+      </div>
+   </div>
+</div>
+<div class="footer-bottom-bg">
+   <div class="copyright py-4">
+      <div class="text-center" style="font-size:16px;">Copyright &copy; 2025 <b><!--<a  href="https://leanbliss24.com/"></a>-->LeanBliss</b> | All Rights Reserved</div>
+   </div>
+</div>
+
+    </footer>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7927GXD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></body>
+<a href="#six-bottles" class="floating-fire-button">
+  🚀 Will you miss this offer? Take advantage 🔥
+</a>
+
+<style>
+.floating-fire-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  z-index: 9999;
+  animation: pulse-glow 1.8s infinite, wiggle-flame 3s infinite;
+  transition: transform 0.3s ease;
+}
+
+.floating-fire-button:hover {
+  transform: scale(1.08);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(255, 80, 80, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 80, 80, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 80, 80, 0); }
+}
+
+@keyframes wiggle-flame {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+</style>
 </html>
