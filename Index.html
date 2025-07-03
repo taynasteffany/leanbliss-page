@@ -1400,16 +1400,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-3px); } }
 </style>
-
-<script>
-  fetch('https://ipapi.co/json/')
-    .then(res => res.json())
-    .then(data => {
-      if (data.country === "BR") {
-        document.body.innerHTML = "";
-        alert("Esta página não está disponível no seu país.");
-      }
-    });
 </script>
 
 </html>
